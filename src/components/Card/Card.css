@@ -1,0 +1,108 @@
+.card{
+    background-color: whitesmoke;
+    width:40%;
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding:25px;
+    box-shadow: 10px 10px;
+}
+
+.card > h2{
+    display: flex;
+    align-items: center;
+    height:400px;
+    font-family: "Anonymous Pro",sand-serif;
+}
+
+.button{
+    outline:none;
+    border-radius:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 150px;
+    width: 150px;
+    opacity:1;
+    background-color: white;
+    border:1 px  solid rgba(22,76,167,0.6);
+}
+
+.button span{
+    color:#164ca7;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.button:hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+
+.button:hover text{
+    animation: text  0.7s ease-in-out both;
+    animation-delay: 0.06s; /* rotate animation start after 60ms */
+} 
+
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+
+  25%{
+    transform: rotate(3deg);
+}
+
+50%{
+    transform: rotate(-3deg);
+} 
+
+75%{
+    transform: rotate(1deg);
+}
+
+10%{
+    transform: rotate(0deg);
+}
+}
+
+@keyframes text{
+    0%{
+        transform: translate3d(0,0,0) ;
+    }
+  
+    25%{
+      transform: translate3d(4px,0,0) ;
+  }
+  
+  50%{
+      transform: translate3d(-3px,0,0);
+  } 
+  
+  75%{
+      transform: translate3d(2px,0,0);
+  }
+  
+  10%{
+      transform: translate3d(0,0,0);
+  }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
